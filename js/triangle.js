@@ -10,7 +10,16 @@ document.getElementById('btn-triangle').addEventListener('click', function () {
     const triangleField2String = triangleField2.value;
     const inputTriangleField2 = parseFloat(triangleField2String);
     triangleField2.value = '';
-    
+
+    if(isNaN(inputTriangleField1 && inputTriangleField2)){
+        alert('Please type a number');
+        return;
+    }
+
+    if( inputTriangleField1 && inputTriangleField2 !== 0){
+        alert('Please type a valid number');
+        return;
+    }
 
     // const valueTriangleA = document.getElementById('triangle-b');
     // const firstValueTriangleString = valueTriangleA.innerText;
@@ -38,4 +47,14 @@ document.getElementById('btn-triangle').addEventListener('click', function () {
     const totalTriangleArea = totalInput + outputTriangle;
     // console.log(triangle);
     triangleElement.innerText = totalTriangleArea;
+})
+
+const bgColor = document.querySelector('header');
+document.getElementById('bg-color').addEventListener('mouseover', function () {
+
+    let color = '#';
+    color += Math.random().toString(16).slice(2, 8);
+    bgColor.style.backgroundColor = color;
+    console.log(color);
+
 })
