@@ -11,14 +11,14 @@ document.getElementById('btn-rectangle').addEventListener('click', function () {
     rectangleField2.value = '';
 
     const totalInput = inputRectangleField1 * inputRectangleField2;
-    (triangleField1 + triangleField2).value = totalInput;
+    (rectangleField1 + rectangleField2).value = totalInput;
 
-    const triangleElement = document.getElementById('triangle');
-    const outputTriangleString = triangleElement.innerText;
-    const outputTriangle = parseFloat(outputTriangleString);
+    const rectangleElement = document.getElementById('rectangle');
+    const outputRectangleString = rectangleElement.innerText;
+    const outputRectangle = parseFloat(outputRectangleString);
     
-    const newTriangle = totalInput + outputTriangle;
-    // console.log(triangle);
-    triangleElement.innerText = newTriangle;
-    // console.log(totalInput);
+    const totalRectangleElement = totalInput + outputRectangle;
+    
+    rectangleElement.innerText = totalRectangleElement;
+    
 })
