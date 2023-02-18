@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <main>
+        <section class="">
+            <div class="grid grid-cols-4 gap-4  mx-5 ml-5 p5 text-center">
+                <div class="py-5 px-8 mx-auto bg-slate-100 rounded mt-5">
+                    <img class="mx-auto mt-3" src="./images/triangle.png" alt="">
+                    <h3 class="text-2xl font-semibold py-4">Triangle</h3>
+                    <h5 class="pb-3">Area (A) = 0.5 x b x h</h5>
+                    <input id="triangle-field1" class="bg-slate-200 px-2 w-20" type="text" placeholder="b">
+                    <button class="px-2">cm</button>
+                    <input id="triangle-field2" class="bg-slate-200 w-20 px-2" type="text" placeholder="h">
+                    <button class="px-2">cm</button>
+                    <button id="btn-triangle"
+                        class="mx-auto bg-blue-600 text-white block px-20 rounded font-semibold py-2 my-5">Calculate</button>
+                </div>
+
+                <div class="py-5 px-8 mx-auto bg-slate-100 rounded mt-5">
+                    <img class="mx-auto mt-9" src="./images/rectangle.png" alt="">
+                    <h3 class="text-2xl font-semibold py-4">Rectangle</h3>
+                    <h5 class="pb-3">Area (A) = w x l</h5>
+                    <input id="rectangle-field1" class="bg-slate-200 px-2 w-20" type="text" placeholder="w">
+                    <button class="px-2">cm</button>
+                    <input id="rectangle-field2" class="bg-slate-200 w-20 px-2" type="text" placeholder="l">
+                    <button class="px-2">cm</button>
+                    <button id="btn-rectangle"
+                        class="mx-auto bg-blue-600 text-white block px-20 rounded font-semibold py-2 my-5">Calculate</button>
+                </div>
+
+                <div class="py-5 px-8 mx-auto bg-slate-100 rounded mt-5">
+                    <img class="mx-auto mt-10" src="./images/parallelogram.png" alt="">
+                    <h3 class="text-2xl font-semibold py-4 mt-3">Parallelogram</h3>
+                    <h5 class="pb-3">Area (A) = b x h</h5>
+                    <h5>b = 10cm, h = 12cm</h5>
+                    <button id="btn-parallelogram"
+                        class="mx-auto bg-blue-600 text-white block px-20 rounded font-semibold py-2 my-5">Calculate</button>
+                </div>
+
+                <div class="rounded mt-5">
+                    <h3 class="underline underline-offset-4 my-5 text-3xl font-bold">Area Calculation</h3>
+                    <div class="rounded mt-5">
+                        <ol class="list-decimal pl-8">
+                            <div class="flex justify-between mb-2">
+                                <div>
+                                    <li>Triangle</li>
+                                </div>
+                                <div>
+                                    <h5 class="mx-auto"><span id="triangle">00</span>cm<sup>2</sup></h5>
+                                </div>
+                                <div>
+                                    <button class="bg-blue-600 text-white px-2 py-0.5 rounded">Covert to me
+                                        <sup>2</sup></button>
+                                </div>
+                            </div>
+                            <div class="flex justify-between mb-2">
+                                <div>
+                                    <li>Rectangle</li>
+                                </div>
+                                <div>
+                                    <h5 class="mx-auto"><span id="rectangle">00</span>cm<sup>2</sup></h5>
+                                </div>
+                                <div>
+                                    <button class="bg-blue-600 text-white px-2 py-0.5 rounded">Covert to me
+                                        <sup>2</sup></button>
+                                </div>
+                            </div>
+                            <div class="flex justify-between mb-2">
+                                <div>
+                                    <li>Parallelogram</li>
+                                </div>
+                                <div>
+                                    <h5 class="mx-auto"><span id="parallelogram">00</span>cm<sup>2</sup></h5>
+                                </div>
+                                <div>
+                                    <button class="bg-blue-600 text-white px-2 py-0.5 rounded">Covert to me
+                                        <sup>2</sup></button>
+                                </div>
+                            </div>
+                            <div class="flex justify-between mb-2">
+                                <div>
+                                    <li>Rhombus</li>
+                                </div>
+                                <div>
+                                    <h5 class="mx-auto"><span id="rhombus">00</span>cm<sup>2</sup></h5>
+                                </div>
+                                <div>
+                                    <button class="bg-blue-600 text-white px-2 py-0.5 rounded">Covert to me
+                                        <sup>2</sup></button>
+                                </div>
+                            </div>
+                            <div class="flex justify-between mb-2">
+                                <div>
+                                    <li>Pentagon</li>
+                                </div>
+                                <div>
+                                    <h5 class="mx-auto"><span id="pentagon">00</span>cm<sup>2</sup></h5>
+                                </div>
+                                <div>
+                                    <button class="bg-blue-600 text-white px-2 py-0.5 rounded">Covert to me
+                                        <sup>2</sup></button>
+                                </div>
+                            </div>
+                            <div class="flex justify-between">
+                                <div>
+                                    <li>Ellipse</li>
+                                </div>
+                                <div>
+                                    <h5 class="mx-auto"><span id="ellipse">00</span>cm<sup>2</sup></h5>
+                                </div>
+                                <div>
+                                    <button class="bg-blue-600 text-white px-2 py-0.5 rounded">Covert to me
+                                        <sup>2</sup></button>
+                                </div>
+                            </div>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="py-5 px-8 mx-auto bg-slate-100 rounded mt-5">
+                    <img class="mx-auto mt-3" src="./images/rhombus.png" alt="">
+                    <h3 class="text-2xl font-semibold py-4">Rhombus</h3>
+                    <h5 class="pb-3">Area (A) = 0.5 x b x h</h5>
+                    <input id="" class="bg-slate-200 px-2 w-20" type="text" placeholder="b">
+                    <button class="px-2">cm</button>
+                    <input class="bg-slate-200 w-20 px-2" type="text" placeholder="h">
+                    <button class="px-2">cm</button>
+                    <button id="btn-rhombus"
+                        class="mx-auto bg-blue-600 text-white block px-20 rounded font-semibold py-2 my-5">Calculate</button>
+                </div>
+
+                <div class="py-5 px-8 mx-auto bg-slate-100 rounded mt-5">
+                    <img class="mx-auto mt-3" src="./images/pentagon.png" alt="">
+                    <h3 class="text-2xl font-semibold py-4">Pentagon</h3>
+                    <h5 class="pb-3">Area (A) = 0.5 x b x h</h5>
+                    <input class="bg-slate-200 px-2 w-20" type="text" placeholder="b">
+                    <button class="px-2">cm</button>
+                    <input class="bg-slate-200 w-20 px-2" type="text" placeholder="h">
+                    <button class="px-2">cm</button>
+                    <button id="btn-pentagon"
+                        class="mx-auto bg-blue-600 text-white block px-20 rounded font-semibold py-2 my-5">Calculate</button>
+                </div>
+
+                <div class="py-5 px-8 mx-auto bg-slate-100 rounded mt-5">
+                    <img class="mx-auto mt-10" src="./images/ellipse.png" alt="">
+                    <h3 class="text-2xl font-semibold py-4">Ellipse</h3>
+                    <h5 class="pb-3">Area (A) = 0.5 x b x h</h5>
+                    <input class="bg-slate-200 px-2 w-20" type="text" placeholder="b">
+                    <button class="px-2">cm</button>
+                    <input class="bg-slate-200 w-20 px-2" type="text" placeholder="h">
+                    <button class="px-2">cm</button>
+                    <button id="btn-ellipse"
+                        class="mx-auto bg-blue-600 text-white block px-20 rounded font-semibold py-2 my-5">Calculate</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/triangle.js"></script>
+    <script src="js/rectangle.js"></script>
+    <script src="js/parallelogram.js"></script>
+</body>
+
+</html>
