@@ -10,7 +10,7 @@
 </head>
 
 <body class="bg-purple-800 ">
-    <div class="text-start px-10">
+    <div class="text-start px-20 mt-8">
         <ol class="list-decimal pl-8 text-white">
             <li class="text-xl text-white py-3 pl-3">What is DOM and what is the purpose of DOM?</li>
             <h3>Answer: document object model this is short from of DOM.document meaning you can tell like ms word file
@@ -33,15 +33,34 @@
                 </ol>
             </h3>
             <li class="text-xl text-white py-3 pl-3">What is event bubble?</li>
-            <h3>Answer: </h3>
-            <li class="text-xl text-white py-3 pl-3">What is a callback function and why will you use it?</li>
-            <h3>Answer: callback function is a function that is passed as an argument to another function to be called
-                back at a later time. A function that accepts other functions as arguments. The purpose of a callback is
-                to execute code in response to an event.These events can be like mouse clicks</h3>
- 
-                <!-- Callback function -->
-            <!-- <body>
-                <h1>Example of Call back function</h1>
+            <h3>Answer:  Event bubbling is a special method of event propagation.
+
+                    <!-- <div id="mahmud" style="background-color: blue;">
+                        <button id="button">Click Me</button>
+                    </div>
+                    </div>
+                    <script>
+                        var mahmud = document.getElementById("mahmud");
+                        var button = document.getElementById("button");
+
+                        mahmud.addEventListener("click", function (event) {
+                            console.log("mahmud div clicked.");
+                        });
+
+                        button.addEventListener("click", function (event) {
+                            console.log("Button clicked.");
+                            event.stopPropagation();
+                        });
+                    </script> -->
+                
+
+</h3>
+<li class="text-xl text-white py-3 pl-3">What is a callback function and why will you use it?</li>
+<h3>Answer: A callback function is a special kind of function that is used in another function as an argument to complete some kind of action.</h3>
+
+<!-- Callback function -->
+
+                <!-- <h1>Example of Call back function</h1>
                 </br>
                 function mahmud() {
                 console.log("This is my name");
@@ -51,10 +70,9 @@
                 }
 
                 mahmud();
-                ekra();
-            </body> -->
-        </ol>
-    </div>
+                ekra(); -->
+</ol>
+</div>
 </body>
 
 </html>
