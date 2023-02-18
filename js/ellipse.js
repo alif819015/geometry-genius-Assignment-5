@@ -8,7 +8,7 @@ document.getElementById('btn-ellipse').addEventListener('click', function () {
     const ellipseField2String = ellipseField2.innerText;
     const inputEllipseField2 = parseFloat(ellipseField2String);
 
-    const totalInput = (inputEllipseField1 * inputEllipseField2 * 3.14).toFixed(2);
+    const totalInput = (inputEllipseField1 * inputEllipseField2 * 3.14).toFixed(1);
     (ellipseField1 + ellipseField2).innerText = totalInput;
 
     const ellipseElement = document.getElementById('ellipse');

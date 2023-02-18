@@ -8,7 +8,7 @@ document.getElementById('btn-pentagon').addEventListener('click', function () {
     const pentagonField2String = pentagonField2.innerText;
     const inputPentagonField2 = parseFloat(pentagonField2String);
 
-    const totalInput = inputPentagonField1 * inputPentagonField2 * .5;
+    const totalInput = (inputPentagonField1 * inputPentagonField2 * .5).toFixed(1);
     (pentagonField1 + pentagonField2).innerText = totalInput;
 
     const pentagonElement = document.getElementById('pentagon');

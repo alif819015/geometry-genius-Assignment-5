@@ -26,7 +26,7 @@ document.getElementById('btn-triangle').addEventListener('click', function () {
     // valueTriangleB.innerText = h;
     // // console.log(typeof h);
 
-    const totalInput = inputTriangleField1 * inputTriangleField2 * .5;
+    const totalInput = (inputTriangleField1 * inputTriangleField2 * .5).toFixed(1);
     (triangleField1 + triangleField2).value = totalInput;
 
 

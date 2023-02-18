@@ -8,7 +8,7 @@ document.getElementById('btn-rhombus').addEventListener('click', function () {
     const rhombusField2String = rhombusField2.innerText;
     const inputRhombusField2 = parseFloat(rhombusField2String);
 
-    const totalInput = inputRhombusField1 * inputRhombusField2 * .5;
+    const totalInput = (inputRhombusField1 * inputRhombusField2 * .5).toFixed(1);
     (rhombusField1 + rhombusField2).innerText = totalInput;
 
     const rhombusElement = document.getElementById('rhombus');
